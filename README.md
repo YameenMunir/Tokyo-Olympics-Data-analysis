@@ -88,13 +88,16 @@ Follow the steps in the notebook to reproduce the analysis and generate visualiz
 
 ### Streamlit Dashboard
 
-To launch the interactive dashboard, run:
+To launch the interactive dashboard locally, run:
 
 ```bash
 streamlit run streamlit_app.py
 ```
 
 This will open a web browser with the interactive dashboard, where you can explore all visualizations and insights in a scrollable format.
+
+**Or try the hosted app here:**
+[https://tokyo-olympics-data-analysis.streamlit.app/](https://tokyo-olympics-data-analysis.streamlit.app/)
 
 ## Results and Findings
 
