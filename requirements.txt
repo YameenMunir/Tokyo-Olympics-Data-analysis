@@ -4,3 +4,4 @@ plotly
 pyspark
 matplotlib
 seaborn
+openpyxl
