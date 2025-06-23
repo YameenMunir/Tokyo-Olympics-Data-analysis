@@ -170,3 +170,15 @@ st.markdown('''
 
 With these analysis it can help shape the future strategies for sports development and ensure continued excellence in international competitions.
 ''')
+
+st.markdown('---')
+st.markdown(
+    '<div style="text-align:center; font-size:1.1em;">'
+    '    Made by <b>Yameen Munir</b> &nbsp;|&nbsp; '
+    '    <a href="https://github.com/YameenMunir" target="_blank">GitHub</a> &nbsp;|&nbsp; '
+    '    <a href="https://www.linkedin.com/in/yameen-munir/" target="_blank">LinkedIn</a> &nbsp;|&nbsp; '
+    '    <a href="https://www.datascienceportfol.io/YameenMunir" target="_blank">Portfolio</a>'
+    '</div>',
+    unsafe_allow_html=True
+)
+
