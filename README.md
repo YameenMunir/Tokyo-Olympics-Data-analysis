@@ -1,5 +1,7 @@
 # Tokyo Olympics Data Analysis
 
+[![Streamlit App](https://img.shields.io/badge/Streamlit-App-green?logo=streamlit)](https://tokyo-olympics-data-analysis.streamlit.app/)
+
 This repository contains an in-depth data analysis and interactive dashboard for the Tokyo Olympics. The project explores medal distributions, athlete performance, gender representation, and the impact of COVID-19 on the games using both a Jupyter notebook and a Streamlit dashboard.
 
 ## Table of Contents
