@@ -33,7 +33,7 @@ def clean_coaches(df):
 coaches = clean_coaches(coaches)
 
 # Medals per Country
-st.header('Number of Medals per Country')
+st.header('🏅 Number of Medals per Country')
 medals_sorted = medals.sort_values('Rank by Total')
 fig = px.bar(medals_sorted, x='Team/NOC', y=['Gold', 'Silver', 'Bronze'], color_discrete_sequence=['Gold', 'Silver', 'Brown'], title='Number of Medals per Country')
 st.plotly_chart(fig, use_container_width=True)
@@ -51,7 +51,7 @@ Some of the key observation:
 st.markdown('---')
 
 # Coaches per Country
-st.header('Number of Coaches per Country')
+st.header('👨‍🏫 Number of Coaches per Country')
 pd_coaches_query = coaches.groupby('NOC').size().reset_index(name='Count').sort_values('NOC')
 fig = px.bar(pd_coaches_query, x='NOC', y='Count', color='Count', title='Number of Coaches per Country')
 st.plotly_chart(fig, use_container_width=True)
@@ -67,7 +67,7 @@ Key Observations:
 st.markdown('---')
 
 # Athletes per Discipline
-st.header('Number of Athletes per Discipline')
+st.header('🏃‍♂️ Number of Athletes per Discipline')
 pd_athletes_query = athletes.groupby(['NOC', 'Discipline']).size().reset_index(name='Count').sort_values(['NOC', 'Discipline'])
 fig = px.bar(pd_athletes_query, x='NOC', y='Count', color='Discipline', title='Number of Athletes per Discipline')
 st.plotly_chart(fig, use_container_width=True)
@@ -96,7 +96,7 @@ Key Observations:
 st.markdown('---')
 
 # Gender Distribution
-st.header('Distribution of Gender amongst each game')
+st.header('⚖️ Distribution of Gender amongst each game')
 specs = [[{'type':'domain'}, {'type':'domain'}]]*min(23, len(entries_gender))
 fig = make_subplots(rows=len(specs), cols=2, subplot_titles=entries_gender['Discipline'], specs=specs)
 sub_figs = []
@@ -116,7 +116,7 @@ st.plotly_chart(fig)
 st.markdown('---')
 
 # Teams by Country
-st.header('Number of Teams by Country')
+st.header('🇺🇳 Number of Teams by Country')
 country_counts = teams['NOC'].value_counts()
 fig, ax = plt.subplots(figsize=(16, 12))
 country_counts.plot(kind='bar', ax=ax)
@@ -147,7 +147,7 @@ st.markdown('After analysing this graph, there were more men than women playing 
 st.markdown('---')
 
 # Conclusion
-st.header('Conclusion')
+st.header('📊 Conclusion')
 st.markdown('''
 ### Summary of Findings:
 1.   Medal Distribution Analysis:
@@ -174,10 +174,10 @@ With these analysis it can help shape the future strategies for sports developme
 st.markdown('---')
 st.markdown(
     '<div style="text-align:center; font-size:1.1em;">'
-    '    Made by <b>Yameen Munir</b> &nbsp;|&nbsp; '
-    '    <a href="https://github.com/YameenMunir" target="_blank">GitHub</a> &nbsp;|&nbsp; '
-    '    <a href="https://www.linkedin.com/in/yameen-munir/" target="_blank">LinkedIn</a> &nbsp;|&nbsp; '
-    '    <a href="https://www.datascienceportfol.io/YameenMunir" target="_blank">Portfolio</a>'
+    '    Made by <b>Yameen Munir</b> 👨‍💻 &nbsp;|&nbsp; '
+    '    <a href="https://github.com/YameenMunir" target="_blank">📁 GitHub</a> &nbsp;|&nbsp; '
+    '    <a href="https://www.linkedin.com/in/yameen-munir/" target="_blank">💼 LinkedIn</a> &nbsp;|&nbsp; '
+    '    <a href="https://yameenmunir.vercel.app/" target="_blank">🌐 Website</a>'
     '</div>',
     unsafe_allow_html=True
 )
